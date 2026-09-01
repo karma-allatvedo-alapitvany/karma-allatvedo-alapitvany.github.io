@@ -43,10 +43,12 @@
     .dogs-heading{max-width:750px;margin-bottom:34px}
     .dog-profile{overflow:hidden;background:#fff;color:var(--ink);border-radius:28px;box-shadow:0 24px 60px #102d2760}
     .dog-profile+.dog-profile{margin-top:36px}
+    .dog-profile.adopted{border:4px solid #72bd91}
     .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
     .dog-cover{width:100%;height:100%;min-height:610px;object-fit:cover}
     .dog-copy{padding:38px}
     .count{display:inline-block;margin-bottom:16px;padding:5px 11px;border-radius:999px;background:#fbe8e2;color:#a84431;font-weight:900;font-size:.82rem}
+    .success{display:inline-block;margin:0 0 16px 8px;padding:5px 11px;border-radius:999px;background:#dcf4e7;color:#17603c;font-weight:900;font-size:.82rem}
     .dog-copy h3{margin-bottom:12px;color:var(--green);font-size:clamp(2rem,5vw,3.5rem)}
     .dog-slogan{margin:0 0 22px;color:var(--coral);font-weight:900;font-size:1.15rem}
     .dog-facts{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px;padding:0;list-style:none}
@@ -97,7 +99,7 @@
     </section>
     <section class="hazavagyok" id="hazavagyok">
       <div class="container">
-        <div class="dogs-heading"><p class="tag">Szerető otthont keresnek</p><h2>Hazavágyók</h2><p>Itt mutatjuk be azt a kilenc kutyát, akik most saját családra és biztonságos otthonra várnak.</p></div>
+        <div class="dogs-heading"><p class="tag">Szerető otthont keresnek</p><h2>Hazavágyók</h2><p>Itt mutatjuk be a sorozat kilenc kutyáját – és velük együtt az örömhíreket is, amikor valamelyikük végre hazatalál.</p></div>
         <article class="dog-profile" id="shila">
           <div class="dog-main">
             <img class="dog-cover" src="assets/shila-1.jpg" alt="Shila a salgótarjáni gyepmesteri telepen" width="835" height="960">
@@ -158,7 +160,37 @@
             <img src="assets/samu-3.jpg" alt="Samu a hóban sétál" loading="lazy" width="960" height="875">
           </div>
         </article>
-        <p class="more-dogs">A további hét Hazavágyó adatlapja folyamatosan érkezik. 🐾</p>
+        <article class="dog-profile adopted" id="jozsika-astor">
+          <div class="dog-main">
+            <img class="dog-cover" src="assets/jozsika-1.jpg" alt="Józsika, más néven Astor, Hazavágyom feliratú gondolatbuborékkal" width="852" height="960">
+            <div class="dog-copy">
+              <span class="count">Hazavágyók 3. · Józsika – Astor</span><span class="success">✓ Gazdira talált</span>
+              <h3>Józsika – Astor</h3>
+              <p class="dog-slogan">A poszt megjelenése után néhány nappal rátalált a nagy Ő!</p>
+              <ul class="dog-facts" aria-label="Józsika adatai">
+                <li>kb. 6 éves</li><li>ivaros kan</li><li>nyugodt</li><li>emberközpontú</li><li>gyerekbarát</li><li>más állatokkal kompatibilis</li><li>egy évet várt</li>
+              </ul>
+              <p>Nemrég úgy tűnt, végre Józsikáért is eljön egy család. Gyerekek mellé szerették volna örökbe fogadni, de végül nem őt választották, hanem egy fiatalabb, elevenebb kutyust. Józsika ismét ott maradt.</p>
+              <p>Pedig nagyon szereti a gyerekeket, emberközpontú, nyugodt és kiegyensúlyozott kutya. Mindenkivel könnyen megtalálja a közös hangot, és más állatokkal is jól kijön.</p>
+              <p>Türelmes, megnyugtató jelenléte miatt megfelelő képzés mellett akár terápiás munkára is ígéretes lehetne. Nem ugrálja körbe az embert, és nem akar mindenáron kitűnni a többiek közül. Talán éppen ezért siklott át rajta olyan sok tekintet.</p>
+              <p>Józsika egy teljes évet várt a Salgótarjáni Gyepmesteri Telepen egy békés otthonra, ahol közel lehet az emberekhez. A története végül örömhírrel folytatódott: a poszt megjelenése után néhány nappal rátalált az, aki valóban őt választotta.</p>
+              <details class="translation" lang="de">
+                <summary>Deutsche Beschreibung anzeigen</summary>
+                <p><strong>Update: Józsika hat sein Zuhause gefunden!</strong> Nur wenige Tage nach der Veröffentlichung des Beitrags fand ihn sein Herzensmensch.</p>
+                <p>Vor Kurzem sah es noch so aus, als würde endlich eine Familie für Józsika kommen. Er sollte zu einer Familie mit Kindern ziehen, doch letztendlich fiel die Wahl nicht auf ihn, sondern auf einen jüngeren, lebhafteren Hund. Józsika blieb erneut zurück.</p>
+                <p>Dabei liebt er Kinder sehr. Er ist menschenbezogen, ruhig und ausgeglichen. Józsika ist etwa sechs Jahre alt und kommt mit Menschen und anderen Tieren gut zurecht.</p>
+                <p>Durch sein geduldiges Wesen und seine beruhigende Ausstrahlung könnte er bei entsprechender Ausbildung möglicherweise sogar für die tiergestützte Arbeit geeignet sein. Er drängt sich nicht in den Vordergrund – vielleicht wurde er gerade deshalb so oft übersehen.</p>
+                <p>Ein ganzes Jahr wartete Józsika in der städtischen Auffangstation von Salgótarján auf ein ruhiges Zuhause. Nun hat seine Geschichte endlich die Fortsetzung bekommen, die wir uns für ihn gewünscht haben.</p>
+              </details>
+            </div>
+          </div>
+          <div class="dog-gallery" aria-label="Józsika fotói">
+            <img src="assets/jozsika-2.jpg" alt="Józsika közelről" loading="lazy" width="720" height="540">
+            <img src="assets/jozsika-3.jpg" alt="Józsika portréja" loading="lazy" width="720" height="497">
+            <img src="assets/jozsika-4.jpg" alt="Józsika séta közben" loading="lazy" width="720" height="447">
+          </div>
+        </article>
+        <p class="more-dogs">A sorozat további hat adatlapja folyamatosan érkezik. 🐾</p>
       </div>
     </section>
     <section id="segitseg">
