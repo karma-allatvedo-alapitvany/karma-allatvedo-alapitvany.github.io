@@ -46,6 +46,7 @@
     .dog-profile.adopted{border:4px solid #72bd91}
     .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
     .dog-cover{width:100%;height:100%;min-height:610px;object-fit:cover}
+    .dog-cover.contain{object-fit:contain;background:#f4ecde}
     .dog-copy{padding:38px}
     .count{display:inline-block;margin-bottom:16px;padding:5px 11px;border-radius:999px;background:#fbe8e2;color:#a84431;font-weight:900;font-size:.82rem}
     .success{display:inline-block;margin:0 0 16px 8px;padding:5px 11px;border-radius:999px;background:#dcf4e7;color:#17603c;font-weight:900;font-size:.82rem}
@@ -63,6 +64,7 @@
     .translation[open] summary{margin-bottom:14px}
     .dog-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;background:#f4ecde}
     .dog-gallery.two{grid-template-columns:repeat(2,1fr)}
+    .dog-gallery.four{grid-template-columns:repeat(4,1fr)}
     .dog-gallery img{width:100%;height:330px;object-fit:cover;border-radius:16px}
     .more-dogs{margin:22px 0 0;text-align:center;color:#dceae7}
     .help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -74,8 +76,8 @@
     footer{background:#17352f;color:#eaf1ef;padding:32px 0}
     .footer{display:flex;justify-content:space-between;gap:24px}
     .footer p{margin:0}
-    @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery img{height:240px}}
-    @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
+    @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery.four{grid-template-columns:repeat(2,1fr)}.dog-gallery img{height:240px}}
+    @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two,.dog-gallery.four{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
   </style>
 </head>
 <body>
@@ -230,7 +232,49 @@
             <img src="assets/kutyi-4.jpg" alt="Kutyi teljes alakos fotója" loading="lazy" width="720" height="960">
           </div>
         </article>
-        <p class="more-dogs">A sorozat további öt adatlapja folyamatosan érkezik. 🐾</p>
+        <article class="dog-profile" id="pluto">
+          <div class="dog-main">
+            <img class="dog-cover contain" src="assets/pluto-1.jpg" alt="Plútó a kennel rácsánál, Hazavágyom feliratú gondolatbuborékkal" width="960" height="857">
+            <div class="dog-copy">
+              <span class="count">Hazavágyók 5. · Plútó</span>
+              <h3>Plútó – a tekintet, amely rabul ejt</h3>
+              <p class="dog-slogan">„Maradj még! Ne hagyj itt! Vigyél haza!”</p>
+              <ul class="dog-facts" aria-label="Plútó adatai">
+                <li>4 éves</li><li>15 kg</li><li>kan</li><li>elsősorban egyedüli kutyának</li><li>kutyaiskola ajánlott</li><li>Salgótarján</li>
+              </ul>
+              <p>Vajon mit mondana Plútó, ha beszélni tudna? Talán azt, hogy már egy örökkévalóság óta vár arra, hogy valaki végre érte jöjjön. Hogy az éjszakák magányosak, fél, és nem érti, miért nem szereti őt senki úgy, ahogyan csak egy igazi gazdi tud szeretni.</p>
+              <p>Hetente egyszer, rövid tizenöt percre kinyílik előtte a kennel ajtaja. Végre sétálhat a fűben, érezheti a nap melegét, és arra a néhány percre csak az övé egy ember figyelme. Önfeledt és boldog tizenöt perc a hét végtelennek tűnő 10 080 percéből.</p>
+              <p>Az egyik séta után, amikor sétáltatója éppen kilépett volna, Plútó ráült a lábfejére, egész testével a lábszárának dőlt, és mélyen a szemébe nézett. Nem lehetett félreérteni: „Maradj még! Ne hagyj itt! Vigyél haza!”</p>
+              <p>De a sétáltatójának nehéz szívvel ott kellett hagynia. Plútó két hátsó lábára állt, mellső mancsait a rácsra tette, és csak nézte, ahogy távolodik. Mintha azt kérdezte volna: „Miért nem kellek?”</p>
+              <div class="placement-note">Plútót elsősorban egyedüli kutyának ajánljuk, vagy olyan gazdi mellé, aki vállalja vele a kutyaiskolát.</div>
+              <p>Hazavágyik. Ha a tekintete a szívedig hatolt, és úgy érzed, te tudnád a szomorúságát boldogsággá változtatni, ne késlekedj! Minden rácsok mögött elvesztegetett percért kár.</p>
+              <div class="contact-box">
+                <p><strong>📍 Salgótarján</strong></p>
+                <p>💬 Kapcsolattartó: Sirkó Attila – Messenger</p>
+                <p>☎️ <a href="tel:+36205830511">06 20 583 0511</a></p>
+              </div>
+              <a class="button" href="tel:+36205830511">Érdeklődöm Plútó iránt</a>
+              <details class="translation" lang="de">
+                <summary>Deutsche Beschreibung anzeigen</summary>
+                <p><strong>Plútó – ein Blick, der dich in seinen Bann zieht.</strong></p>
+                <p>Was würde Plútó wohl sagen, wenn er sprechen könnte? Vielleicht würde er erzählen, dass er schon eine Ewigkeit darauf wartet, dass endlich jemand kommt, um ihn zu sich zu holen. Dass die Nächte einsam sind, dass er Angst hat und nicht versteht, warum ihn niemand so liebt, wie nur ein eigener Mensch lieben kann.</p>
+                <p>Einmal in der Woche öffnet sich für gerade einmal fünfzehn Minuten seine Zwingertür. Endlich darf er über das Gras laufen, die Wärme der Sonne spüren und die ungeteilte Aufmerksamkeit eines Menschen genießen. Fünfzehn glückliche Minuten von den 10.080 Minuten einer Woche.</p>
+                <p>Nach einem Spaziergang setzte sich Plútó auf den Fuß seiner Gassigängerin, lehnte sich mit seinem ganzen Körper an ihr Bein und sah ihr tief in die Augen: „Bleib noch! Lass mich nicht hier! Nimm mich mit nach Hause!“</p>
+                <p>Doch sie musste ihn zurücklassen. Plútó stellte sich auf seine Hinterbeine, legte seine Vorderpfoten an das Gitter und sah ihr nach. Als wollte er fragen: „Warum will mich niemand?“</p>
+                <p><strong>Plútó ist vier Jahre alt, wiegt 15 Kilogramm und sollte vorzugsweise als Einzelhund gehalten werden oder zu einem Menschen kommen, der bereit ist, mit ihm eine Hundeschule zu besuchen.</strong></p>
+                <p>Er sehnt sich nach einem Zuhause. Jede weitere Minute hinter Gittern ist eine verlorene Minute.</p>
+                <p><strong>📍 Salgótarján, Ungarn<br>💬 Ansprechpartner: Sirkó Attila – Messenger<br>☎️ <a href="tel:+36205830511">+36 20 583 0511</a></strong></p>
+              </details>
+            </div>
+          </div>
+          <div class="dog-gallery four" aria-label="Plútó fotói">
+            <img src="assets/pluto-2.jpg" alt="Plútó boldogan ül a fűben" loading="lazy" width="960" height="941">
+            <img src="assets/pluto-3.jpg" alt="Plútó mancsai a kennel rácsán" loading="lazy" width="720" height="960">
+            <img src="assets/pluto-4.jpg" alt="Plútó sétán a zöld mezőn" loading="lazy" width="907" height="960">
+            <img src="assets/pluto-5.jpg" alt="Plútó tekintete a kennel rácsai mögött" loading="lazy" width="706" height="960">
+          </div>
+        </article>
+        <p class="more-dogs">A sorozat további négy adatlapja folyamatosan érkezik. 🐾</p>
       </div>
     </section>
     <section id="segitseg">
