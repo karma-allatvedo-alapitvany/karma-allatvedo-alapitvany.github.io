@@ -1,1 +1,0 @@
-# karma-allatvedo-alapitvany.github.io

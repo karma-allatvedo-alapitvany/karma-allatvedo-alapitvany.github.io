@@ -1,24 +1,124 @@
 <!doctype html>
 <html lang="hu">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Karma Állatvédő Alapítvány – gazdikereső állatok és állatmentés Salgótarjánban.">
-<meta name="theme-color" content="#244b43">
-<title>Karma Állatvédő Alapítvány</title>
-<style>
-:root{--green:#244b43;--cream:#fffaf1;--sand:#f1e5cf;--coral:#d96850;--ink:#25322e;--muted:#62716c}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}.container{width:min(1100px,calc(100% - 32px));margin:auto}header{position:sticky;top:0;z-index:5;background:rgba(255,250,241,.95);border-bottom:1px solid #244b4320}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green);font-weight:800}.logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--green);font-size:22px}nav{display:flex;gap:20px}nav a{text-decoration:none;color:var(--green);font-weight:700}.hero{padding:84px 0 96px;background:linear-gradient(135deg,#fffaf1,#f3e5ca)}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px}.tag{margin:0 0 12px;color:var(--coral);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em}h1,h2,h3{line-height:1.15;margin-top:0}h1{font-size:clamp(3rem,7vw,5.6rem);letter-spacing:-.05em;color:var(--green);margin-bottom:20px}h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.03em}.lead{font-size:1.18rem;color:var(--muted);max-width:680px}.button{display:inline-block;margin-top:18px;padding:13px 20px;border-radius:999px;background:var(--coral);color:#fff;text-decoration:none;font-weight:900}.hero-card{background:#fff;padding:32px;border-radius:26px;box-shadow:0 20px 50px #244b4320}.hero-card span{font-size:64px}.hero-card h2{font-size:1.8rem;color:var(--green)}section{padding:86px 0}.heading{max-width:760px;margin-bottom:38px}.heading p:last-child{color:var(--muted)}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;padding:24px;border-radius:20px;border:1px solid #244b4318}.card b{font-size:28px}.card h3{margin:12px 0 6px;color:var(--green)}.card p{margin:0;color:var(--muted)}.hazavagyok{background:var(--green);color:#fff}.hazavagyok .tag{color:#f5a38f}.intro{display:grid;grid-template-columns:.75fr 1.25fr;gap:42px;align-items:center}.waiting{background:#fff;color:var(--ink);padding:30px;border-radius:24px;display:flex;gap:22px;align-items:center}.waiting span{font-size:58px}.waiting h3{color:var(--green);margin-bottom:6px}.waiting p{margin:0;color:var(--muted)}.help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.help article{padding:22px;background:#fff;border-radius:18px;border-left:5px solid var(--coral)}.help h3{margin-bottom:5px;color:var(--green)}.help p{margin:0;color:var(--muted)}.contact{background:var(--sand);padding:58px 0}.contact p{color:var(--muted)}footer{background:#17352f;color:#eaf1ef;padding:32px 0}.footer{display:flex;justify-content:space-between;gap:24px}.footer p{margin:0}@media(max-width:800px){nav{display:none}.hero-grid,.intro{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.services,.help{grid-template-columns:1fr}.waiting{align-items:flex-start;flex-direction:column}.footer{flex-direction:column}h1{font-size:3.2rem}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Karma Állatvédő Alapítvány – gazdikereső állatok és állatmentés Salgótarjánban.">
+  <meta name="theme-color" content="#244b43">
+  <title>Karma Állatvédő Alapítvány</title>
+  <style>
+    :root{--green:#244b43;--cream:#fffaf1;--sand:#f1e5cf;--coral:#d96850;--ink:#25322e;--muted:#62716c}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    img{display:block;max-width:100%}
+    .container{width:min(1100px,calc(100% - 32px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(255,250,241,.95);border-bottom:1px solid #244b4320}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green);font-weight:800}
+    .logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--green);font-size:22px}
+    nav{display:flex;gap:20px}
+    nav a{text-decoration:none;color:var(--green);font-weight:700}
+    .hero{padding:84px 0 96px;background:linear-gradient(135deg,#fffaf1,#f3e5ca)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:48px}
+    .tag{margin:0 0 12px;color:var(--coral);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em}
+    h1,h2,h3{line-height:1.15;margin-top:0}
+    h1{font-size:clamp(3rem,7vw,5.6rem);letter-spacing:-.05em;color:var(--green);margin-bottom:20px}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.03em}
+    .lead{font-size:1.18rem;color:var(--muted);max-width:680px}
+    .button{display:inline-block;margin-top:18px;padding:13px 20px;border-radius:999px;background:var(--coral);color:#fff;text-decoration:none;font-weight:900}
+    .hero-card{background:#fff;padding:32px;border-radius:26px;box-shadow:0 20px 50px #244b4320}
+    .hero-card span{font-size:64px}
+    .hero-card h2{font-size:1.8rem;color:var(--green)}
+    section{padding:86px 0}
+    .heading{max-width:760px;margin-bottom:38px}
+    .heading p:last-child{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:#fff;padding:24px;border-radius:20px;border:1px solid #244b4318}
+    .card b{font-size:28px}
+    .card h3{margin:12px 0 6px;color:var(--green)}
+    .card p{margin:0;color:var(--muted)}
+    .hazavagyok{background:var(--green);color:#fff}
+    .hazavagyok .tag{color:#f5a38f}
+    .dogs-heading{max-width:750px;margin-bottom:34px}
+    .dog-profile{overflow:hidden;background:#fff;color:var(--ink);border-radius:28px;box-shadow:0 24px 60px #102d2760}
+    .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
+    .dog-cover{width:100%;height:100%;min-height:610px;object-fit:cover}
+    .dog-copy{padding:38px}
+    .count{display:inline-block;margin-bottom:16px;padding:5px 11px;border-radius:999px;background:#fbe8e2;color:#a84431;font-weight:900;font-size:.82rem}
+    .dog-copy h3{margin-bottom:12px;color:var(--green);font-size:clamp(2rem,5vw,3.5rem)}
+    .dog-slogan{margin:0 0 22px;color:var(--coral);font-weight:900;font-size:1.15rem}
+    .dog-facts{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px;padding:0;list-style:none}
+    .dog-facts li{padding:7px 11px;border-radius:999px;background:#eef4f2;color:var(--green);font-weight:800;font-size:.9rem}
+    .dog-copy p{color:var(--muted)}
+    .dog-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;background:#f4ecde}
+    .dog-gallery img{width:100%;height:330px;object-fit:cover;border-radius:16px}
+    .more-dogs{margin:22px 0 0;text-align:center;color:#dceae7}
+    .help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .help article{padding:22px;background:#fff;border-radius:18px;border-left:5px solid var(--coral)}
+    .help h3{margin-bottom:5px;color:var(--green)}
+    .help p{margin:0;color:var(--muted)}
+    .contact{background:var(--sand);padding:58px 0}
+    .contact p{color:var(--muted)}
+    footer{background:#17352f;color:#eaf1ef;padding:32px 0}
+    .footer{display:flex;justify-content:space-between;gap:24px}
+    .footer p{margin:0}
+    @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery img{height:240px}}
+    @media(max-width:520px){.services,.help,.dog-gallery{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
+  </style>
 </head>
 <body>
-<header><div class="container nav"><a class="brand" href="#"><span class="logo">🐾</span><span>Karma Állatvédő Alapítvány</span></a><nav aria-label="Főmenü"><a href="#rolunk">Rólunk</a><a href="#hazavagyok">Hazavágyók</a><a href="#segitseg">Segítség</a><a href="#kapcsolat">Kapcsolat</a></nav></div></header>
-<main>
-<section class="hero"><div class="container hero-grid"><div><p class="tag">Salgótarján · Nógrád vármegye</p><h1>Minden megmentett élet számít.</h1><p class="lead">Bajba jutott, gazdátlan állatokért dolgozunk: biztonságot, állatorvosi segítséget és esélyt adunk nekik egy szerető otthonra.</p><a class="button" href="#hazavagyok">Ismerd meg a Hazavágyókat</a></div><aside class="hero-card"><span>🐶</span><h2>Együtt többre vagyunk képesek</h2><p>Minden megosztás, felajánlás és segítő kéz közelebb visz egy állatot a biztonsághoz.</p></aside></div></section>
-<section id="rolunk"><div class="container"><div class="heading"><p class="tag">Amit teszünk</p><h2>Esélyt adunk azoknak, akik nem tudnak segítséget kérni</h2><p>A Karma Állatvédő Alapítvány Salgótarjánban és környékén segíti a bajba jutott állatokat. A mentés mellett fontosnak tartjuk a megelőzést és a felelős állattartást.</p></div><div class="services"><article class="card"><b>🏡</b><h3>Mentés</h3><p>Biztonságot keresünk a bajba jutott állatoknak.</p></article><article class="card"><b>🩺</b><h3>Gyógyítás</h3><p>Segítjük az állatorvosi ellátást és az ivartalanítást.</p></article><article class="card"><b>💚</b><h3>Örökbeadás</h3><p>Felelős, szerető családot keresünk számukra.</p></article><article class="card"><b>🤝</b><h3>Összefogás</h3><p>Önkéntesekkel és támogatókkal dolgozunk.</p></article></div></div></section>
-<section class="hazavagyok" id="hazavagyok"><div class="container intro"><div><p class="tag">Szerető otthont keresnek</p><h2>Hazavágyók</h2><p>Itt mutatjuk be azt a kilenc kutyát, akik most saját családra és biztonságos otthonra várnak.</p></div><div class="waiting"><span>🐾</span><div><h3>A kilenc kutya adatlapja készül</h3><p>A fotókat és a részletes, hiteles bemutatkozásokat hamarosan feltöltjük.</p></div></div></div></section>
-<section id="segitseg"><div class="container"><div class="heading"><p class="tag">Te is életet menthetsz</p><h2>Így állhatsz mellénk</h2><p>Nem csak pénzzel lehet segíteni. Az időd, a figyelmed és egy megosztás is valódi változást hozhat.</p></div><div class="help"><article><h3>🏡 Fogadj örökbe</h3><p>Adj végleges, biztonságos otthont.</p></article><article><h3>🤲 Légy ideiglenes befogadó</h3><p>Adj átmeneti otthont a gazdikeresés idejére.</p></article><article><h3>🐕 Önkénteskedj</h3><p>Segíts sétáltatással, szállítással, fotózással vagy posztírással.</p></article><article><h3>💚 Támogasd a mentéseket</h3><p>Segíts az ellátás, az élelem és az ivartalanítás költségeiben.</p></article></div></div></section>
-<section class="contact" id="kapcsolat"><div class="container"><p class="tag">Kapcsolat</p><h2>Segítenél vagy örökbe fogadnál?</h2><p>A hivatalos elérhetőségeket és támogatási adatokat hamarosan feltöltjük.</p></div></section>
-</main>
-<footer><div class="container footer"><p><strong>Karma Állatvédő Alapítvány</strong><br>Salgótarján</p><p>© 2026 · Minden élet számít.</p></div></footer>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#"><span class="logo">🐾</span><span>Karma Állatvédő Alapítvány</span></a>
+      <nav aria-label="Főmenü"><a href="#rolunk">Rólunk</a><a href="#hazavagyok">Hazavágyók</a><a href="#segitseg">Segítség</a><a href="#kapcsolat">Kapcsolat</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div><p class="tag">Salgótarján · Nógrád vármegye</p><h1>Minden megmentett élet számít.</h1><p class="lead">Bajba jutott, gazdátlan állatokért dolgozunk: biztonságot, állatorvosi segítséget és esélyt adunk nekik egy szerető otthonra.</p><a class="button" href="#hazavagyok">Ismerd meg a Hazavágyókat</a></div>
+        <aside class="hero-card"><span>🐶</span><h2>Együtt többre vagyunk képesek</h2><p>Minden megosztás, felajánlás és segítő kéz közelebb visz egy állatot a biztonsághoz.</p></aside>
+      </div>
+    </section>
+    <section id="rolunk">
+      <div class="container">
+        <div class="heading"><p class="tag">Amit teszünk</p><h2>Esélyt adunk azoknak, akik nem tudnak segítséget kérni</h2><p>A Karma Állatvédő Alapítvány Salgótarjánban és környékén segíti a bajba jutott állatokat. A mentés mellett fontosnak tartjuk a megelőzést és a felelős állattartást.</p></div>
+        <div class="services"><article class="card"><b>🏡</b><h3>Mentés</h3><p>Biztonságot keresünk a bajba jutott állatoknak.</p></article><article class="card"><b>🩺</b><h3>Gyógyítás</h3><p>Segítjük az állatorvosi ellátást és az ivartalanítást.</p></article><article class="card"><b>💚</b><h3>Örökbeadás</h3><p>Felelős, szerető családot keresünk számukra.</p></article><article class="card"><b>🤝</b><h3>Összefogás</h3><p>Önkéntesekkel és támogatókkal dolgozunk.</p></article></div>
+      </div>
+    </section>
+    <section class="hazavagyok" id="hazavagyok">
+      <div class="container">
+        <div class="dogs-heading"><p class="tag">Szerető otthont keresnek</p><h2>Hazavágyók</h2><p>Itt mutatjuk be azt a kilenc kutyát, akik most saját családra és biztonságos otthonra várnak.</p></div>
+        <article class="dog-profile" id="shila">
+          <div class="dog-main">
+            <img class="dog-cover" src="assets/shila-1.jpg" alt="Shila a salgótarjáni gyepmesteri telepen" width="835" height="960">
+            <div class="dog-copy">
+              <span class="count">Hazavágyók 1. · Shila</span>
+              <h3>Shila vagyok</h3>
+              <p class="dog-slogan">Öleb, labdaimádó és főállású pusziosztó!</p>
+              <ul class="dog-facts" aria-label="Shila adatai">
+                <li>kb. 1 éves</li><li>szuka</li><li>ivartalanított</li><li>oltott</li><li>chipezett</li><li>egészséges</li><li>Salgótarján</li>
+              </ul>
+              <p>A salgótarjáni gyepmesteri telepről Bogner Henriett mentett ki. Betegen kerültem hozzá, de a gondoskodásnak köszönhetően felépültem.</p>
+              <p>Ma már vidám, játékos kutyalány vagyok: imádom a labdát, az ölben üldögélést és a pusziosztást. Most már csak egy saját család hiányzik, akinek hűséges társa lehetek.</p>
+              <a class="button" href="#kapcsolat">Érdeklődöm Shila iránt</a>
+            </div>
+          </div>
+          <div class="dog-gallery" aria-label="Shila fotói">
+            <img src="assets/shila-2.jpg" alt="Shila ideiglenes otthonában" loading="lazy" width="840" height="960">
+            <img src="assets/shila-3.jpg" alt="Shila pihenés közben" loading="lazy" width="960" height="806">
+            <img src="assets/shila-4.jpg" alt="Shila játék közben" loading="lazy" width="720" height="960">
+          </div>
+        </article>
+        <p class="more-dogs">A további nyolc Hazavágyó adatlapja folyamatosan érkezik. 🐾</p>
+      </div>
+    </section>
+    <section id="segitseg">
+      <div class="container"><div class="heading"><p class="tag">Te is életet menthetsz</p><h2>Így állhatsz mellénk</h2><p>Nem csak pénzzel lehet segíteni. Az időd, a figyelmed és egy megosztás is valódi változást hozhat.</p></div><div class="help"><article><h3>🏡 Fogadj örökbe</h3><p>Adj végleges, biztonságos otthont.</p></article><article><h3>🤲 Légy ideiglenes befogadó</h3><p>Adj átmeneti otthont a gazdikeresés idejére.</p></article><article><h3>🐕 Önkénteskedj</h3><p>Segíts sétáltatással, szállítással, fotózással vagy posztírással.</p></article><article><h3>💚 Támogasd a mentéseket</h3><p>Segíts az ellátás, az élelem és az ivartalanítás költségeiben.</p></article></div></div>
+    </section>
+    <section class="contact" id="kapcsolat"><div class="container"><p class="tag">Kapcsolat</p><h2>Segítenél vagy örökbe fogadnál?</h2><p>A hivatalos elérhetőségeket és támogatási adatokat hamarosan feltöltjük.</p></div></section>
+  </main>
+  <footer><div class="container footer"><p><strong>Karma Állatvédő Alapítvány</strong><br>Salgótarján</p><p>© 2026 · Minden élet számít.</p></div></footer>
 </body>
 </html>
