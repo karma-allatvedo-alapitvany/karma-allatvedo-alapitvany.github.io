@@ -42,6 +42,7 @@
     .hazavagyok .tag{color:#f5a38f}
     .dogs-heading{max-width:750px;margin-bottom:34px}
     .dog-profile{overflow:hidden;background:#fff;color:var(--ink);border-radius:28px;box-shadow:0 24px 60px #102d2760}
+    .dog-profile+.dog-profile{margin-top:36px}
     .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
     .dog-cover{width:100%;height:100%;min-height:610px;object-fit:cover}
     .dog-copy{padding:38px}
@@ -51,7 +52,14 @@
     .dog-facts{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px;padding:0;list-style:none}
     .dog-facts li{padding:7px 11px;border-radius:999px;background:#eef4f2;color:var(--green);font-weight:800;font-size:.9rem}
     .dog-copy p{color:var(--muted)}
+    .contact-box{margin:24px 0 0;padding:16px 18px;border-radius:16px;background:#f7eee0;color:var(--ink)}
+    .contact-box p{margin:2px 0;color:var(--ink)}
+    .contact-box a{color:var(--green);font-weight:900}
+    .translation{margin-top:24px;border-top:1px solid #244b4325;padding-top:18px}
+    .translation summary{cursor:pointer;color:var(--green);font-weight:900}
+    .translation[open] summary{margin-bottom:14px}
     .dog-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;background:#f4ecde}
+    .dog-gallery.two{grid-template-columns:repeat(2,1fr)}
     .dog-gallery img{width:100%;height:330px;object-fit:cover;border-radius:16px}
     .more-dogs{margin:22px 0 0;text-align:center;color:#dceae7}
     .help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -64,7 +72,7 @@
     .footer{display:flex;justify-content:space-between;gap:24px}
     .footer p{margin:0}
     @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery img{height:240px}}
-    @media(max-width:520px){.services,.help,.dog-gallery{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
+    @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
   </style>
 </head>
 <body>
@@ -111,7 +119,46 @@
             <img src="assets/shila-4.jpg" alt="Shila játék közben" loading="lazy" width="720" height="960">
           </div>
         </article>
-        <p class="more-dogs">A további nyolc Hazavágyó adatlapja folyamatosan érkezik. 🐾</p>
+        <article class="dog-profile" id="samu">
+          <div class="dog-main">
+            <img class="dog-cover" src="assets/samu-1.jpg" alt="Samu sétán, Hazavágyom feliratú gondolatbuborékkal" width="683" height="960">
+            <div class="dog-copy">
+              <span class="count">Hazavágyók 2. · Samu</span>
+              <h3>Samu vagyok</h3>
+              <p class="dog-slogan">Egy boldog séta végén én is szeretnék végre hazamenni.</p>
+              <ul class="dog-facts" aria-label="Samu adatai">
+                <li>kb. 4 éves</li><li>kan</li><li>ivartalanított</li><li>emberbarát</li><li>kutyabarát</li><li>kb. 2 éve vár</li><li>Salgótarján</li>
+              </ul>
+              <p>A fotó címe akár ez is lehetne: „Egy boldog nap a gazdival”. De Samut nem a gazdija sétáltatja.</p>
+              <p>A séta végén nem várja meleg otthon. Sem egy saját fekhely. Sem egy simogató kéz. Egy önkéntes ajándékozott neki néhány boldog percet a kennelen kívül: egy rövid sétát és egy kis figyelmet.</p>
+              <p>Aztán a séta hamar véget ér. Az önkéntesnek mennie kell, Samu pedig nem hazatér, hanem visszakerül a gyepmesteri telep valóságába. Oda, ahol már két hosszú éve csak vár és vár…</p>
+              <p>Pedig Samu nagyon szeretetreméltó! Imádja az embereket, és más kutyákkal is nagy örömmel barátkozik.</p>
+              <p>Lehet, hogy Samu fényképe nem véletlenül került ma eléd. Talán éppen te leszel az, aki egy boldog séta végén lehajol hozzá, és azt mondja: „Gyere, kiskutyám! Most már hazamegyünk.”</p>
+              <div class="contact-box">
+                <p><strong>📍 Salgótarjáni Gyepmesteri Telep</strong></p>
+                <p>📞 Érdeklődni: Bogner Henriett</p>
+                <p>☎️ <a href="tel:+36205830511">06 20 583 0511</a></p>
+              </div>
+              <a class="button" href="tel:+36205830511">Érdeklődöm Samu iránt</a>
+              <details class="translation" lang="de">
+                <summary>Deutsche Beschreibung anzeigen</summary>
+                <p><strong>Sehnsucht nach einem Zuhause – Teil 2<br>Die Waisen der städtischen Auffangstation Salgótarján</strong></p>
+                <p>Der Titel dieses Fotos könnte lauten: „Ein glücklicher Tag mit meinem Menschen“. Doch es ist nicht Samus eigener Mensch, der mit ihm spazieren geht.</p>
+                <p>Am Ende des Spaziergangs wartet kein warmes Zuhause auf ihn. Kein eigenes Körbchen. Keine Hand, die ihn liebevoll streichelt. Eine ehrenamtliche Helferin hat ihm einige glückliche Minuten außerhalb seines Zwingers geschenkt: einen kurzen Spaziergang und ein wenig Aufmerksamkeit.</p>
+                <p>Doch der Spaziergang ist schnell vorbei. Die Helferin muss gehen – und Samu geht nicht nach Hause. Er kehrt zurück in die kalte, eintönige Welt der ungarischen Auffangstation. Dorthin, wo er seit zwei langen Jahren wartet und wartet …</p>
+                <p>Dabei ist Samu, dieser etwa vierjährige, kastrierte Rüde, unglaublich liebenswert! Er liebt Menschen und freundet sich auch mit anderen Hunden sehr gerne an.</p>
+                <p>Vielleicht ist es kein Zufall, dass Samus Foto heute gerade dir begegnet ist. Vielleicht wirst du diejenige oder derjenige sein, der sich am Ende eines glücklichen Spaziergangs zu ihm hinunterbeugt und sagt: „Komm, mein Kleiner! Jetzt gehen wir nach Hause.“</p>
+                <p>Wenn du das Gefühl hast, dass Samu für den Rest seines Lebens einen Platz in deinem Herzen und deinem Zuhause finden könnte, dann warte bitte nicht länger.</p>
+                <p><strong>📍 Städtische Auffangstation Salgótarján, Ungarn<br>📞 Ansprechpartnerin: Bogner Henriett<br>☎️ <a href="tel:+36205830511">+36 20 583 0511</a></strong></p>
+              </details>
+            </div>
+          </div>
+          <div class="dog-gallery two" aria-label="Samu fotói">
+            <img src="assets/samu-2.jpg" alt="Samu téli séta közben" loading="lazy" width="663" height="960">
+            <img src="assets/samu-3.jpg" alt="Samu a hóban sétál" loading="lazy" width="960" height="875">
+          </div>
+        </article>
+        <p class="more-dogs">A további hét Hazavágyó adatlapja folyamatosan érkezik. 🐾</p>
       </div>
     </section>
     <section id="segitseg">
