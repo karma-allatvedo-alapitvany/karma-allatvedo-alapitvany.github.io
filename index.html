@@ -45,7 +45,7 @@
     .dog-profile+.dog-profile{margin-top:36px}
     .dog-profile.adopted{border:4px solid #72bd91}
     .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
-    .dog-cover{width:100%;height:100%;min-height:610px;object-fit:cover}
+    .dog-cover{width:100%;height:100%;min-height:610px;object-fit:contain;object-position:center;background:#f4ecde}
     .dog-cover.contain{object-fit:contain;background:#f4ecde}
     .dog-copy{padding:38px}
     .count{display:inline-block;margin-bottom:16px;padding:5px 11px;border-radius:999px;background:#fbe8e2;color:#a84431;font-weight:900;font-size:.82rem}
@@ -66,7 +66,7 @@
     .dog-gallery.one{grid-template-columns:1fr}
     .dog-gallery.two{grid-template-columns:repeat(2,1fr)}
     .dog-gallery.four{grid-template-columns:repeat(4,1fr)}
-    .dog-gallery img{width:100%;height:330px;object-fit:cover;border-radius:16px}
+    .dog-gallery img{width:100%;height:330px;object-fit:contain;object-position:center;background:#efe5d4;border-radius:16px}
     .more-dogs{margin:22px 0 0;text-align:center;color:#dceae7}
     .help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .help article{padding:22px;background:#fff;border-radius:18px;border-left:5px solid var(--coral)}
