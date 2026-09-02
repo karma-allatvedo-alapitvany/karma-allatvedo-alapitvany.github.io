@@ -45,8 +45,8 @@
     .dog-profile+.dog-profile{margin-top:36px}
     .dog-profile.adopted{border:4px solid #72bd91}
     .dog-main{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr}
-    .dog-cover{width:100%;height:100%;min-height:610px;object-fit:contain;object-position:center;background:#f4ecde}
-    .dog-cover.contain{object-fit:contain;background:#f4ecde}
+    .dog-cover{width:100%;height:100%;min-height:610px;object-fit:contain;object-position:center;background-color:#f4ecde;background-image:url('assets/paw-heart-pattern.webp');background-repeat:repeat;background-size:320px 320px}
+    .dog-cover.contain{object-fit:contain}
     .dog-copy{padding:38px}
     .count{display:inline-block;margin-bottom:16px;padding:5px 11px;border-radius:999px;background:#fbe8e2;color:#a84431;font-weight:900;font-size:.82rem}
     .success{display:inline-block;margin:0 0 16px 8px;padding:5px 11px;border-radius:999px;background:#dcf4e7;color:#17603c;font-weight:900;font-size:.82rem}
@@ -62,11 +62,11 @@
     .translation{margin-top:24px;border-top:1px solid #244b4325;padding-top:18px}
     .translation summary{cursor:pointer;color:var(--green);font-weight:900}
     .translation[open] summary{margin-bottom:14px}
-    .dog-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;background:#f4ecde}
+    .dog-gallery{display:grid;grid-template-columns:repeat(3,1fr);align-items:start;gap:10px;padding:10px;background-color:#f4ecde;background-image:url('assets/paw-heart-pattern.webp');background-repeat:repeat;background-size:260px 260px}
     .dog-gallery.one{grid-template-columns:1fr}
     .dog-gallery.two{grid-template-columns:repeat(2,1fr)}
     .dog-gallery.four{grid-template-columns:repeat(4,1fr)}
-    .dog-gallery img{width:100%;height:330px;object-fit:contain;object-position:center;background:#efe5d4;border-radius:16px}
+    .dog-gallery img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;background:#efe5d4;border-radius:16px}
     .more-dogs{margin:22px 0 0;text-align:center;color:#dceae7}
     .help{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .help article{padding:22px;background:#fff;border-radius:18px;border-left:5px solid var(--coral)}
@@ -77,8 +77,8 @@
     footer{background:#17352f;color:#eaf1ef;padding:32px 0}
     .footer{display:flex;justify-content:space-between;gap:24px}
     .footer p{margin:0}
-    @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery.four{grid-template-columns:repeat(2,1fr)}.dog-gallery img{height:240px}}
-    @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two,.dog-gallery.four{grid-template-columns:1fr}.dog-gallery img{height:auto;max-height:none}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
+    @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery.four{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two,.dog-gallery.four{grid-template-columns:1fr}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
   </style>
 </head>
 <body>
