@@ -38,6 +38,21 @@
     .card b{font-size:28px}
     .card h3{margin:12px 0 6px;color:var(--green)}
     .card p{margin:0;color:var(--muted)}
+    .volunteer-section{background:#f7eee0;padding:86px 0}
+    .volunteer-card{overflow:hidden;background:#fff;border:1px solid #244b4318;border-radius:28px;box-shadow:0 24px 60px #244b4320}
+    .volunteer-copy{padding:clamp(28px,5vw,50px)}
+    .volunteer-copy h2{max-width:880px;margin-bottom:14px;color:var(--green)}
+    .volunteer-kicker{margin:0 0 22px;color:var(--coral);font-size:1.08rem;font-weight:900}
+    .volunteer-needs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:26px 0}
+    .volunteer-need{padding:18px;border-radius:18px;background:#eef4f2;color:var(--muted)}
+    .volunteer-need strong{display:block;margin-bottom:4px;color:var(--green);font-size:1.05rem}
+    .volunteer-highlight{margin:24px 0;padding:18px 20px;border-left:5px solid var(--coral);border-radius:14px;background:#fff1ec;color:#693628;font-weight:800}
+    .volunteer-contact{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:26px;padding:20px;border-radius:18px;background:#f7eee0}
+    .volunteer-contact p{margin:0}
+    .volunteer-contact .button{margin:0}
+    .volunteer-share{margin:22px 0 0;color:var(--green);font-weight:900}
+    .volunteer-gallery{display:grid;grid-template-columns:repeat(3,1fr);align-items:start;gap:10px;padding:10px;background-color:#f4ecde;background-image:url('assets/paw-heart-pattern.webp');background-repeat:repeat;background-size:260px 260px}
+    .volunteer-gallery img{display:block;width:100%;height:auto;object-fit:contain;background:#efe5d4;border-radius:16px}
     .hazavagyok{background:var(--green);color:#fff}
     .hazavagyok .tag{color:#f5a38f}
     .dogs-heading{max-width:750px;margin-bottom:34px}
@@ -77,6 +92,8 @@
     footer{background:#17352f;color:#eaf1ef;padding:32px 0}
     .footer{display:flex;justify-content:space-between;gap:24px}
     .footer p{margin:0}
+    @media(max-width:800px){.volunteer-needs{grid-template-columns:1fr}}
+    @media(max-width:620px){.volunteer-gallery{grid-template-columns:1fr}.volunteer-copy{padding:26px}}
     @media(max-width:800px){nav{display:none}.hero-grid,.dog-main{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.dog-cover{min-height:0;max-height:680px}.dog-copy{padding:28px}.dog-gallery.four{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:520px){.services,.help,.dog-gallery,.dog-gallery.two,.dog-gallery.four{grid-template-columns:1fr}.footer{flex-direction:column}h1{font-size:3.2rem}.dog-copy{padding:24px}}
   </style>
@@ -85,7 +102,7 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#"><span class="logo">🐾</span><span>Karma Állatvédő Alapítvány</span></a>
-      <nav aria-label="Főmenü"><a href="#rolunk">Rólunk</a><a href="#hazavagyok">Hazavágyók</a><a href="#segitseg">Segítség</a><a href="#kapcsolat">Kapcsolat</a></nav>
+      <nav aria-label="Főmenü"><a href="#rolunk">Rólunk</a><a href="#onkentesek">Önkéntesség</a><a href="#hazavagyok">Hazavágyók</a><a href="#segitseg">Segítség</a><a href="#kapcsolat">Kapcsolat</a></nav>
     </div>
   </header>
   <main>
@@ -99,6 +116,34 @@
       <div class="container">
         <div class="heading"><p class="tag">Amit teszünk</p><h2>Esélyt adunk azoknak, akik nem tudnak segítséget kérni</h2><p>A Karma Állatvédő Alapítvány Salgótarjánban és környékén segíti a bajba jutott állatokat. A mentés mellett fontosnak tartjuk a megelőzést és a felelős állattartást.</p></div>
         <div class="services"><article class="card"><b>🏡</b><h3>Mentés</h3><p>Biztonságot keresünk a bajba jutott állatoknak.</p></article><article class="card"><b>🩺</b><h3>Gyógyítás</h3><p>Segítjük az állatorvosi ellátást és az ivartalanítást.</p></article><article class="card"><b>💚</b><h3>Örökbeadás</h3><p>Felelős, szerető családot keresünk számukra.</p></article><article class="card"><b>🤝</b><h3>Összefogás</h3><p>Önkéntesekkel és támogatókkal dolgozunk.</p></article></div>
+      </div>
+    </section>
+    <section class="volunteer-section" id="onkentesek">
+      <div class="container">
+        <article class="volunteer-card">
+          <div class="volunteer-copy">
+            <p class="tag">Salgótarján · Segítőket keresünk</p>
+            <h2>‼️ Salgótarjáni állatbarátok, rátok van szükség! ‼️</h2>
+            <p class="volunteer-kicker">🐾 Önkénteseket keresünk a Salgótarjáni Ebrendészeti Telep kutyáihoz!</p>
+            <p class="lead">A telepen jelenleg körülbelül 130 kutya él, de csak néhány önkéntes tudja rendszeresen sétáltatni őket. Ők minden elismerést megérdemelnek, hiszen erejükön felül próbálnak segíteni. Egy-egy kutyus hetente mindössze egyszer, körülbelül 15 percre kerülhet ki a kennelből.</p>
+            <div class="volunteer-needs">
+              <div class="volunteer-need"><strong>🐕 Kutyasétáltatás</strong>Adj mozgást, örömet és egy kis személyes törődést egy telepi kutyának.</div>
+              <div class="volunteer-need"><strong>📸 Gazdikereső fotók és videók</strong>Lehet, hogy éppen a te felvételed alapján figyel fel rájuk a leendő álomgazdi.</div>
+            </div>
+            <p class="volunteer-highlight">Már heti egy-két óra segítség is nagyon sokat jelent!</p>
+            <p>A sétával nemcsak mozgást, hanem egy kis örömet és törődést is vihetsz a kutyusok életébe. Ha pedig inkább fotókat vagy videókat készítenél róluk, annak is nagyon örülünk.</p>
+            <div class="volunteer-contact">
+              <p><strong>Bogner Henriett</strong><br>📞 <a href="tel:+36205830511">06 20 583 0511</a></p>
+              <a class="button" href="tel:+36205830511">Önkéntesnek jelentkezem</a>
+            </div>
+            <p class="volunteer-share">Kérlek, osszátok meg salgótarjáni csoportokban is! 🐾</p>
+          </div>
+          <div class="volunteer-gallery" aria-label="Önkéntesség nélkül és önkéntes segítségével">
+            <img src="assets/onkentes-1.jpg" alt="Egy barna telepi kutya önkéntes segítsége előtt és séta közben" loading="lazy" width="640" height="960">
+            <img src="assets/onkentes-2.jpg" alt="Egy telepi kutya a rács mögött és önkéntessel a szabadban" loading="lazy" width="640" height="960">
+            <img src="assets/onkentes-3.jpg" alt="Egy fekete telepi kutya önkéntes segítsége előtt és séta közben" loading="lazy" width="640" height="960">
+          </div>
+        </article>
       </div>
     </section>
     <section class="hazavagyok" id="hazavagyok">
