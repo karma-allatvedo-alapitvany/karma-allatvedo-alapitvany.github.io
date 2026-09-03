@@ -88,7 +88,11 @@
     .help h3{margin-bottom:5px;color:var(--green)}
     .help p{margin:0;color:var(--muted)}
     .contact{background:var(--sand);padding:58px 0}
-    .contact p{color:var(--muted)}
+    .contact>div>p{color:var(--muted)}
+    .contact-card{max-width:560px;margin-top:24px;padding:22px 24px;border-radius:18px;background:#fff;box-shadow:0 16px 38px #244b4318}
+    .contact-card p{margin:0 0 8px;color:var(--ink)}
+    .contact-card a:not(.button){color:var(--green);font-weight:900}
+    .contact-card .button{margin-top:12px}
     footer{background:#17352f;color:#eaf1ef;padding:32px 0}
     .footer{display:flex;justify-content:space-between;gap:24px}
     .footer p{margin:0}
@@ -500,7 +504,19 @@
     <section id="segitseg">
       <div class="container"><div class="heading"><p class="tag">Te is életet menthetsz</p><h2>Így állhatsz mellénk</h2><p>Nem csak pénzzel lehet segíteni. Az időd, a figyelmed és egy megosztás is valódi változást hozhat.</p></div><div class="help"><article><h3>🏡 Fogadj örökbe</h3><p>Adj végleges, biztonságos otthont.</p></article><article><h3>🤲 Légy ideiglenes befogadó</h3><p>Adj átmeneti otthont a gazdikeresés idejére.</p></article><article><h3>🐕 Önkénteskedj</h3><p>Segíts sétáltatással, szállítással, fotózással vagy posztírással.</p></article><article><h3>💚 Támogasd a mentéseket</h3><p>Segíts az ellátás, az élelem és az ivartalanítás költségeiben.</p></article></div></div>
     </section>
-    <section class="contact" id="kapcsolat"><div class="container"><p class="tag">Kapcsolat</p><h2>Segítenél vagy örökbe fogadnál?</h2><p>A hivatalos elérhetőségeket és támogatási adatokat hamarosan feltöltjük.</p></div></section>
+    <section class="contact" id="kapcsolat">
+      <div class="container">
+        <p class="tag">Kapcsolat</p>
+        <h2>Segítenél vagy örökbe fogadnál?</h2>
+        <p>Gazdikereső kutya, örökbefogadás vagy önkéntesség ügyében keresd bizalommal Henriettet.</p>
+        <div class="contact-card">
+          <p><strong>Bogner Henriett</strong></p>
+          <p>📍 Salgótarján</p>
+          <p>📞 <a href="tel:+36205830511">06 20 583 0511</a></p>
+          <a class="button" href="tel:+36205830511">Henriett felhívása</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer><div class="container footer"><p><strong>Karma Állatvédő Alapítvány</strong><br>Salgótarján</p><p>© 2026 · Minden élet számít.</p></div></footer>
 </body>
